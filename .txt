@@ -5,3 +5,5 @@
 5. membuat backend
 6. membuat login untuk google
 7. membuat ketika page turun 200px maka bg login akan menjadi abu abu transparent / blur
+8. membuat sebuah navbar dan order jadi satu
+
