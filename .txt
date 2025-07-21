@@ -3,3 +3,4 @@
 3. membuat sebuah halaman dashboard
 4. membuat sebuah halaman main
 5. membuat backend
+6. membuat login untuk google
