@@ -77,35 +77,38 @@ export default function Header() {
                         <Link href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
                             <img
-                                alt=""
-                                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-                                className="h-8 w-auto"/>
+                                decoding="async"
+                                width={200}
+                                height={80}
+                                alt="Logo Essential Oil"
+                                loading='lazy'
+                                src={logo.src}
+                                className="lg:w-[160px] xl:w-[200px]" />
                         </Link>
                         <button
                             type="button"
                             onClick={() => setMobileMenuOpen(false)}
-                            className="-m-2.5 rounded-md p-2.5 text-gray-700"
-                        >
+                            className="-m-2.5 rounded-md p-2.5 text-gray-700">
                             <span className="sr-only">Close menu</span>
                             <XMarkIcon aria-hidden="true" className="size-6" />
                         </button>
                     </div>
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-gray-500/10">
-                            <div className="space-y-2 py-6">
-                                <Link href="#" className="md:text-md xl:text-[1.05rem] font-medium text-gray-900 hover:text-primary hover:scale-105 hover:transition-all hover:border-b-2 hover:border-black">
+                            <div className="space-y-2 py-6 flex flex-col gap-5 mt-5">
+                                <Link href="#" className="text-[1.05rem] font-medium text-gray-900 hover:text-primary hover:scale-105 hover:transition-all hover:border-b-2 hover:border-black hover:w-20 w-100">
                                     Products
                                 </Link>
-                                <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-primary">
+                                <Link href="#" className="text-[1.05rem] font-medium text-gray-900 hover:text-primary hover:scale-105 hover:transition-all hover:border-b-2 hover:border-black hover:w-20 w-100 ">
                                     About Us
                                 </Link>
-                                <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-primary">
+                                <Link href="#" className="text-[1.05rem] font-medium text-gray-900 hover:text-primary hover:scale-105 hover:transition-all hover:border-b-2 hover:border-black hover:w-29 w-100 ">
                                     Testimonials
                                 </Link>
-                                <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-primary">
+                                <Link href="#" className="text-[1.05rem] font-medium text-gray-900 hover:text-primary hover:scale-105 hover:transition-all hover:border-b-2 hover:border-black hover:w-20 w-100 ">
                                     Reviews
                                 </Link>
-                                <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-primary">
+                                <Link href="#" className="text-[1.05rem] font-medium text-gray-900 hover:text-primary hover:scale-105 hover:transition-all hover:border-b-2 hover:border-black hover:w-25 w-100 ">
                                     Contact Us
                                 </Link>
                             </div>
