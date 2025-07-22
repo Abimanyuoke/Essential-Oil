@@ -78,7 +78,7 @@ export default function Header() {
                             <span className="sr-only">Your Company</span>
                             <img
                                 decoding="async"
-                                width={200}
+                                width={160}
                                 height={80}
                                 alt="Logo Essential Oil"
                                 loading='lazy'
@@ -112,12 +112,13 @@ export default function Header() {
                                     Contact Us
                                 </Link>
                             </div>
-                            <div className="py-6">
-                                <Link
-                                    href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
-                                    Log in
-                                </Link>
+                            <div className="flex items-center py-4">
+                                <button className="text-base font-medium cursor-pointer text-white px-6 py-2.5 bg-black rounded-md hover:scale-105 hover:bg-primary transition-all duration-300 shadow-lg" onClick={() => router.push('/auth/signIn')}>
+                                    Sign In
+                                </button>
+                                <div className='w-[38px] h-[38px] p-2 flex items-center justify-center rounded-full text-white bg-black hover:scale-105 hover:bg-primary transition-all duration-300 ml-4 text-2xl'>
+                                    <LuShoppingBasket />
+                                </div>
                             </div>
                         </div>
                     </div>

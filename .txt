@@ -8,3 +8,5 @@
 8. membuat sebuah navbar dan order jadi satu
 9. membuat logout ada button peringatan
 10. membuat tampilan order seperti di tokopedia
+11. Ketika user ingin membeli dan mengklik di halaman main maka langsung diarahkan ke halaman login
+
