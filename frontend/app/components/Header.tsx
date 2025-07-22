@@ -10,32 +10,46 @@ import {
     Bars3Icon,
     XMarkIcon,
 } from '@heroicons/react/24/outline'
+import logo from '../../public/logo.webp'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
+import { LuShoppingBasket } from 'react-icons/lu'
+
 
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    const router = useRouter();
 
     return (
         <header className="bg-white">
-            <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+            <nav aria-label="Global" className="mmx-auto flex container items-center justify-between p-6 lg:px-8">
                 <div className="flex lg:flex-1">
                     <Link href="#" className="-m-1.5 p-1.5">
-                        <span className="sr-only">Your Company</span>
                         <img
-                            alt=""
-                            src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-                            className="h-8 w-auto"/>
+                            decoding="async"
+                            width={200}
+                            height={80}
+                            alt="Logo Essential Oil"
+                            loading='lazy'
+                            src={logo.src}
+                            className="lg:w-[160px] xl:w-[200px]" />
                     </Link>
                 </div>
-                <PopoverGroup className="hidden lg:flex lg:gap-x-20">
-                    <Link href="#" className="text-[1.05rem] font-semibold text-gryay-900">
-                        Features
+                <PopoverGroup className="hidden lg:flex lg:gap-x-7 xl:gap-x-16 items-center">
+                    <Link href="#" className="md:text-md xl:text-[1.05rem] font-medium text-gray-900 hover:text-primary hover:scale-105 hover:transition-all hover:border-b-2 hover:border-black duration-300">
+                        Products
                     </Link>
-                    <Link href="#" className="text-[1.05rem] font-semibold text-gray-900">
-                        Marketplace
+                    <Link href="#" className="md:text-md xl:text-[1.05rem] font-medium text-gray-900 hover:text-primary hover:scale-105 hover:transition-all hover:border-b-2 hover:border-black duration-300">
+                        About Us
                     </Link>
-                    <Link href="#" className="text-[1.05rem] font-semibold text-gray-900">
-                        Company
+                    <Link href="#" className="md:text-md xl:text-[1.05rem] font-medium text-gray-900 hover:text-primary hover:scale-105 hover:transition-all hover:border-b-2 hover:border-black duration-300">
+                        Testimonials
+                    </Link>
+                    <Link href="#" className="md:text-md xl:text-[1.05rem] font-medium text-gray-900 hover:text-primary hover:scale-105 hover:transition-all hover:border-b-2 hover:border-black duration-300">
+                        Reviews
+                    </Link>
+                    <Link href="#" className="md:text-md xl:text-[1.05rem] font-medium text-gray-900 hover:text-primary hover:scale-105 hover:transition-all hover:border-b-2 hover:border-black duration-300">
+                        Contact Us
                     </Link>
                 </PopoverGroup>
                 <div className="flex lg:hidden">
@@ -47,10 +61,13 @@ export default function Header() {
                         <Bars3Icon aria-hidden="true" className="size-6" />
                     </button>
                 </div>
-                <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <Link href="#" className="text-lg font-semibold text-gray-900">
-                        Log in <span aria-hidden="true">&rarr;</span>
-                    </Link>
+                <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center">
+                    <button className="text-base font-medium cursor-pointer text-white px-6 py-2.5 bg-black rounded-md hover:scale-105 hover:bg-primary transition-all duration-300 shadow-lg" onClick={() => router.push('/auth/signIn')}>
+                        Sign In
+                    </button>
+                    <div className='w-[38px] h-[38px] p-2 flex items-center justify-center rounded-full text-white bg-black hover:scale-105 hover:bg-primary transition-all duration-300 ml-4 text-2xl'>
+                        <LuShoppingBasket />
+                    </div>
                 </div>
             </nav>
             <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
@@ -62,8 +79,7 @@ export default function Header() {
                             <img
                                 alt=""
                                 src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-                                className="h-8 w-auto"
-                            />
+                                className="h-8 w-auto"/>
                         </Link>
                         <button
                             type="button"
@@ -77,14 +93,20 @@ export default function Header() {
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-gray-500/10">
                             <div className="space-y-2 py-6">
-                                <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
-                                    Features
+                                <Link href="#" className="md:text-md xl:text-[1.05rem] font-medium text-gray-900 hover:text-primary hover:scale-105 hover:transition-all hover:border-b-2 hover:border-black">
+                                    Products
                                 </Link>
-                                <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
-                                    Marketplace
+                                <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-primary">
+                                    About Us
                                 </Link>
-                                <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
-                                    Company
+                                <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-primary">
+                                    Testimonials
+                                </Link>
+                                <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-primary">
+                                    Reviews
+                                </Link>
+                                <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-primary">
+                                    Contact Us
                                 </Link>
                             </div>
                             <div className="py-6">
