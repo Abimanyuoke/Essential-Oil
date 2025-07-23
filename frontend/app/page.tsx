@@ -1,10 +1,13 @@
-import Image from "next/image";
+import AboutLetter from "./components/AboutLetter";
 import Banner from "./components/Banner";
 
 export default function Home() {
   return (
     <div>
-      <Banner/>
+      <Banner />
+      <div className="container mx-auto px-5">
+        <AboutLetter />
+      </div>
     </div>
   );
 }
