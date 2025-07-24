@@ -1,5 +1,6 @@
 'use client'
 import { ArrowRight } from 'lucide-react'
+import { motion } from "framer-motion";
 import React from 'react'
 
 export default function AboutLetter() {
@@ -14,7 +15,9 @@ export default function AboutLetter() {
                 </div>
                 <div className='col-span-1'>
                     <div className='p-1 bg-primary rounded-full border-primary border-2 text-center cursor-pointer transition-all duration-500 hover:bg-black hover:scale-105 hover:border-2 group'>
-                        <ArrowRight size={40} />
+                        <motion.div  whileHover={{ x: 50, opacity: 0 }} transition={{ duration: 0.4, ease: "easeInOut" }} className='flex items-center justify-center h-10 w-10 text-white group-hover:text-primary'>
+                            <ArrowRight size={40} />
+                        </motion.div>
                     </div>
                 </div>
             </div>
