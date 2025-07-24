@@ -15,7 +15,7 @@ export default function AboutLetter() {
                 </div>
                 <div className='col-span-1'>
                     <div className='p-1 bg-primary rounded-full border-primary border-2 text-center cursor-pointer transition-all duration-500 hover:bg-black hover:scale-105 hover:border-2 group'>
-                        <motion.div  whileHover={{ x: 50, opacity: 0 }} transition={{ duration: 0.4, ease: "easeInOut" }} className='flex items-center justify-center h-10 w-10 text-white group-hover:text-primary'>
+                        <motion.div  whileHover={{ x: 50, opacity: 0 }} transition={{ duration: 0.3, ease: "easeInOut" }} className='flex items-center justify-center h-10 w-10 text-white  '>
                             <ArrowRight size={40} />
                         </motion.div>
                     </div>
