@@ -62,20 +62,7 @@ export default function Products() {
     ]
 
     return (
-        <div className='w-4/5 mx-auto py-10'>
-            <div className="grid lg:grid-cols-8 gap-10 md:gap-20 bg-black text-white p-14 rounded-xl items-center shadow-xl cursor-pointer mb-10">
-                <div className='col-span-4'>
-                    <h1 className='text-4xl/normal'>What Does Cinnamon Do You To Face?</h1>
-                </div>
-                <div className='col-span-3'>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quis ratione ex eius quod esse nesciunt architecto ea explicabo aut eveniet, accusamus minus perspiciatis alias voluptas ab eligendi molestiae reprehenderit?</p>
-                </div>
-                <div className='col-span-1'>
-                    <button className='p-2 bg-primary rounded-full border-primary border-2 text-center transition-all duration-500 hover:bg-black hover:scale-105 hover:border-2'>
-                        <span className='text-white'>Learn More</span>
-                    </button>
-                </div>
-            </div>
+        <div className='py-20 md:my-20'>
             <div className="grid md:grid-cols-3 gap-8">
                 {products.map((product, idx) => (
                     <div key={idx} className="bg-white text-black rounded-lg shadow-md p-6 flex flex-col items-center">
