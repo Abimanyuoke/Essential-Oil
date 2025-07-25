@@ -63,6 +63,10 @@ export default function Products() {
 
     return (
         <div className='py-20 md:my-20'>
+            <div className="pb-20">
+                <h2 className="font-semibold text-4xl md:text-5xl text-black text-center">Our Products</h2>
+                <div className="w-48 h-1 bg-primary mx-auto mt-4"></div>
+            </div>
             <div className="grid md:grid-cols-3 gap-8">
                 {products.map((product, idx) => (
                     <div key={idx} className="bg-white text-black rounded-lg shadow-md p-6 flex flex-col items-center">
