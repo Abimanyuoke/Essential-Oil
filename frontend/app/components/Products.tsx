@@ -1,6 +1,7 @@
 'use client'
 
 import React from "react";
+import { LuShoppingBasket } from 'react-icons/lu'
 
 export default function Products() {
 
@@ -78,7 +79,7 @@ export default function Products() {
             </div>
             <div className="grid md:grid-cols-4 gap-10 items-center">
                 {products.map((product, idx) => (
-                    <div key={idx} className="bg-white text-black rounded-xl shadow-lg p-6 flex flex-col gap-4">
+                    <div key={idx} className="bg-white text-black rounded-xl shadow-lg p-6 flex flex-col gap-4 h-[380px]">
                         <img src={product.img} alt={product.title} className="w-full object-cover rounded-lg mb-2" />
                         <h2 className="text-lg font-semibold">{product.title}</h2>
                         <p className="text-sm text-gray-600">{product.description}</p>
@@ -88,6 +89,12 @@ export default function Products() {
                             </span>
                             <span className="text-yellow-500 font-medium">
                                 ★ {product.rating}
+                            </span>
+                        </div>
+                        <div className="mt-4 w-full bg-black text-white px-6 py-4 gap-1.5 rounded-sm hover:scale-105 transition-all duration-300 hover:bg-primarys shadow-xl flex items-center justify-center cursor-pointer">
+                            <span className="">
+                                <LuShoppingBasket className="inline-block mr-2 text-white" />
+                                Add to Cart
                             </span>
                         </div>
                     </div>
