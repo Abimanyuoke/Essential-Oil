@@ -8,10 +8,10 @@ export default function Banner() {
         <div className="bg-gradient-to-t from-primary/40 to-white">
             <div className="container px-5 md:py-10 mx-auto">
                 <div className="grid lg:grid-cols-2 gap-10 items-center py-20">
-                    <div className="flex flex-col justify-center items-start gap-4 space-y-10">
-                        <h1 className="text-black font-bold text-8xl pt-8">Cinnamon Essential <span className="text-primary">Oil</span></h1>
+                    <div className="space-y-10">
+                        <h1 className="text-5xl md:text-6xl xl:text-8xl font-bold pt-8">Cinnamon Essential <span className="text-primary">Oil</span></h1>
                         <p className="text-base text-black">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, eligendi saepe? Assumenda perferendis in, similique rem unde possimus magnam odio minima mollitia ipsa sunt et dolore provident, accusantium sint! Blanditiis.</p>
-                        <div className="grid grid-cols-3 gap-5 pt-3 pb-10">
+                        <div className="grid grid-cols-2 gap-5 pt-3 pb-10">
                             <button className="cursor-pointer hover:duration-300 bg-black text-primary-foreground shadow-xs hover:bg-primary hover:scale-105 hover:shadow-md rounded-sm gap-1.5 px-6 h-15">Explore Now</button>
                             <button className="cursor-pointer hover:duration-300 border-2 bg-primary/5 shadow-xs hover:bg-primary/20 border-primary/60 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 rounded-sm gap-1.5 px-6 h-15">
                                 <span className="flex items-center justify-center gap-2 text-black font-medium text-base rounded-lg">
