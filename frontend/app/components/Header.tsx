@@ -62,7 +62,7 @@ export default function Header() {
                     </button>
                 </div>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center">
-                    <button className="text-base font-medium cursor-pointer text-white px-6 py-2.5 bg-black rounded-md hover:scale-105 hover:bg-primary transition-all duration-300 shadow-lg" onClick={() => router.push('/auth/signIn')}>
+                    <button className="text-base font-medium cursor-pointer text-white px-6 py-2.5 bg-black rounded-sm hover:scale-105 hover:bg-primary transition-all duration-300 shadow-lg" onClick={() => router.push('/auth/signIn')}>
                         Sign In
                     </button>
                     <div className='w-[38px] h-[38px] p-2 flex items-center justify-center rounded-full text-white bg-black hover:scale-105 hover:bg-primary transition-all duration-300 ml-4 text-2xl'>
@@ -113,7 +113,7 @@ export default function Header() {
                                 </Link>
                             </div>
                             <div className="flex items-center py-4">
-                                <button className="text-base font-medium cursor-pointer text-white px-6 py-2.5 bg-black rounded-md hover:scale-105 hover:bg-primary transition-all duration-300 shadow-lg" onClick={() => router.push('/auth/signIn')}>
+                                <button className="text-base font-medium cursor-pointer text-white px-6 py-2.5 bg-black rounded-sm hover:scale-105 hover:bg-primary transition-all duration-300 shadow-lg" onClick={() => router.push('/auth/signIn')}>
                                     Sign In
                                 </button>
                                 <div className='w-[38px] h-[38px] p-2 flex items-center justify-center rounded-full text-white bg-black hover:scale-105 hover:bg-primary transition-all duration-300 ml-4 text-2xl'>
