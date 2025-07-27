@@ -92,10 +92,10 @@ export default function Products() {
                             </span>
                         </div>
                         <div className="mt-4 w-full bg-black text-white px-6 py-4 gap-1.5 rounded-sm hover:scale-105 transition-all duration-300 hover:bg-primarys shadow-xl flex items-center justify-center cursor-pointer">
-                            <span className="">
+                            <button className="">
                                 <LuShoppingBasket className="inline-block mr-2 text-white" />
                                 Add to Cart
-                            </span>
+                            </button>
                         </div>
                     </div>
                 ))}
