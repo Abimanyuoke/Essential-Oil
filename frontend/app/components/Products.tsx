@@ -2,8 +2,22 @@
 
 import React from "react";
 import { LuShoppingBasket } from 'react-icons/lu'
+import { Badge } from "../components/Badges"
 
 export default function Products() {
+
+    const badgeStyles = [
+        { name: 'Best Seller', color: 'bg-yellow-400 text-black' },
+        { name: 'New', color: 'bg-green-500 text-white' },
+        { name: 'Popular', color: 'bg-blue-500 text-white' },
+        { name: 'Sale', color: 'bg-red-500 text-white' },
+        { name: 'Premium', color: 'bg-purple-500 text-white' }
+    ];
+
+    function getBadgeColor(badge: string) {
+        const found = badgeStyles.find(b => b.name === badge);
+        return found ? found.color : '';
+    }
 
     const products = [
         {
@@ -100,6 +114,11 @@ export default function Products() {
                                 ★ {product.rating}
                             </span>
                         </div>
+                        {product.badge && (
+                            <Badge className={`${getBadgeColor(product.badge)} mt-2`}>
+                                {product.badge}
+                            </Badge>
+                        )}
                         <div className="mt-4 w-full bg-black text-white px-6 py-4 gap-1.5 rounded-sm hover:scale-105 transition-all duration-300 hover:bg-primarys shadow-xl flex items-center justify-center cursor-pointer">
                             <button className="">
                                 <LuShoppingBasket className="inline-block mr-2 text-white" />
