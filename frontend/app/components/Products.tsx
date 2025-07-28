@@ -115,7 +115,7 @@ export default function Products() {
                             </span>
                         </div>
                         {product.badge && (
-                            <Badge className={`${getBadgeColor(product.badge)} absolute right-0 mr-3`}>
+                            <Badge className={`${getBadgeColor(product.badge)} absolute right-0 mr-4`}>
                                 {product.badge}
                             </Badge>
                         )}
