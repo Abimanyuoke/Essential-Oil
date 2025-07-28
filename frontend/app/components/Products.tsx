@@ -102,7 +102,7 @@ export default function Products() {
             </div>
             <div className="grid md:grid-cols-4 gap-10 items-center">
                 {products.map((product, idx) => (
-                    <div key={idx} className="bg-white text-black rounded-xl shadow-lg p-6 flex flex-col gap-4 h-[380px]">
+                    <div key={idx} className="bg-white text-black rounded-xl shadow-lg p-6 flex flex-col gap-4 h-[380px] relative">
                         <img src={product.img} alt={product.title} className="w-full object-cover rounded-lg mb-2" />
                         <h2 className="text-lg font-semibold">{product.title}</h2>
                         <p className="text-sm text-gray-600">{product.description}</p>
@@ -115,7 +115,7 @@ export default function Products() {
                             </span>
                         </div>
                         {product.badge && (
-                            <Badge className={`${getBadgeColor(product.badge)} mt-2`}>
+                            <Badge className={`${getBadgeColor(product.badge)} absolute right-0 mr-3`}>
                                 {product.badge}
                             </Badge>
                         )}
