@@ -1,4 +1,5 @@
 import AboutLetter from "./components/AboutLetter";
+import AboutUs from "./components/Aboutus";
 import Banner from "./components/Banner";
 import Products from "./components/Products";
 
@@ -9,6 +10,7 @@ export default function Home() {
       <div className="container mx-auto px-5">
         <AboutLetter />
         <Products/>
+        <AboutUs/>
       </div>
     </div>
   );
