@@ -17,6 +17,7 @@ export default function AboutUs() {
                     <span className="inline-flex items-center justify-center w-6 h-6 bg-green-100 rounded-full mr-2">
                         <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#22c55e"></circle><path d="M7 13l3 3 7-7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                     </span>
+                    <span>We so opinion friends me message as delight.</span>
                 </div>
 
                 <div className="absolute right-2 top-16 md:top-28 md:right-32 transition-all animate-pulse">
