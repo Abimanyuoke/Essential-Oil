@@ -9,22 +9,22 @@ export default function Partners() {
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3 md:gap-14 items-center">
                 <div className="flex items-center justify-center">
-                    <img src="/images/partner1.png" alt="Partner 1" className="w-24 h-24 md:w-32 md:h-32 object-contain" />
+                    <img src="/partners/partner1.png" alt="Partner 1" className="w-24 h-24 md:w-32 md:h-32 object-contain" />
                 </div>
                 <div className="flex items-center justify-center">
-                    <img src="/images/partner2.png" alt="Partner 2" className="w-24 h-24 md:w-32 md:h-32 object-contain" />
+                    <img src="/partners/partner2.png" alt="Partner 2" className="w-24 h-24 md:w-32 md:h-32 object-contain" />
                 </div>
                 <div className="flex items-center justify-center">
-                    <img src="/images/partner3.png" alt="Partner 3" className="w-24 h-24 md:w-32 md:h-32 object-contain" />
+                    <img src="/partners/partner3.png" alt="Partner 3" className="w-24 h-24 md:w-32 md:h-32 object-contain" />
                 </div>
                 <div className="flex items-center justify-center">
-                    <img src="/images/partner4.png" alt="Partner 4" className="w-24 h-24 md:w-32 md:h-32 object-contain" />
+                    <img src="/partners/partner4.png" alt="Partner 4" className="w-24 h-24 md:w-32 md:h-32 object-contain" />
                 </div>
                 <div className="flex items-center justify-center">
-                    <img src="/images/partner5.png" alt="Partner 5" className="w-24 h-24 md:w-32 md:h-32 object-contain" />
+                    <img src="/partners/partner5.png" alt="Partner 5" className="w-24 h-24 md:w-32 md:h-32 object-contain" />
                 </div>
                 <div className="flex items-center justify-center">
-                    <img src="/images/partner6.png" alt="Partner 6" className="w-24 h-24 md:w-32 md:h-32 object-contain" />
+                    <img src="/partners/partner6.png" alt="Partner 6" className="w-24 h-24 md:w-32 md:h-32 object-contain" />
                 </div>
             </div>
         </div>
