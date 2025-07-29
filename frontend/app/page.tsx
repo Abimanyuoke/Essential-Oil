@@ -1,6 +1,7 @@
 import AboutLetter from "./components/AboutLetter";
 import AboutUs from "./components/Aboutus";
 import Banner from "./components/Banner";
+import Partners from "./components/Partners";
 import Products from "./components/Products";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
         <AboutLetter />
         <Products/>
         <AboutUs/>
+        <Partners/>
       </div>
     </div>
   );
