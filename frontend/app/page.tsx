@@ -3,6 +3,7 @@ import AboutUs from "./components/Aboutus";
 import Banner from "./components/Banner";
 import Partners from "./components/Partners";
 import Products from "./components/Products";
+import Testimonial from "./components/Testimonial";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <AboutUs/>
         <Partners/>
       </div>
+        <Testimonial/>
     </div>
   );
 }
