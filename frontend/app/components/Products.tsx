@@ -21,7 +21,7 @@ export default function Products() {
 
     const products = [
         {
-            img: '/images/menu/cinnamonoil1.jpg',
+            img: '/menu/cinnamonoil1.jpg',
             title: 'Cinnamon Essential Oil',
             description: 'Cinnamon oil soothes skin, provides a warming sensation, and is known for its anti-inflammatory and antimicrobial properties.',
             rating: 4.5,
@@ -29,7 +29,7 @@ export default function Products() {
             badge: 'Best Seller'
         },
         {
-            img: '/images/lavender.jpg',
+            img: '/menu/lavender.jpg',
             title: 'Lavender Essential Oil',
             description: 'Lavender oil is popular for its calming and relaxing effects. It can help reduce stress and improve sleep quality.',
             rating: 4.8,
@@ -37,7 +37,7 @@ export default function Products() {
             badge: 'New'
         },
         {
-            img: '/images/peppermint.jpg',
+            img: '/menu/peppermint.jpg',
             title: 'Peppermint Essential Oil',
             description: 'Peppermint oil is invigorating and refreshing. It can help relieve headaches and improve focus.',
             rating: 4.6,
@@ -45,7 +45,7 @@ export default function Products() {
             badge: ''
         },
         {
-            img: '/images/tea-tree.jpg',
+            img: '/menu/tea-tree.jpg',
             title: 'Tea Tree Essential Oil',
             description: 'Tea tree oil is well-known for its antibacterial and antifungal properties, making it great for skin care.',
             rating: 4.7,
@@ -53,7 +53,7 @@ export default function Products() {
             badge: 'Popular'
         },
         {
-            img: '/images/eucalyptus.jpg',
+            img: '/menu/eucalyptus.jpg',
             title: 'Eucalyptus Essential Oil',
             description: 'Eucalyptus oil helps clear the mind and supports respiratory health. It is commonly used in aromatherapy.',
             rating: 4.4,
@@ -61,7 +61,7 @@ export default function Products() {
             badge: ''
         },
         {
-            img: '/images/lemongrass.jpg',
+            img: '/menu/lemongrass.jpg',
             title: 'Lemongrass Essential Oil',
             description: 'Lemongrass oil has a fresh, citrus scent and is used to relieve stress and anxiety.',
             rating: 4.3,
@@ -69,7 +69,7 @@ export default function Products() {
             badge: 'Sale'
         },
         {
-            img: '/images/rose.jpg',
+            img: '/menu/rose.jpg',
             title: 'Rose Essential Oil',
             description: 'Rose oil is cherished for its uplifting aroma and skin-nourishing benefits.',
             rating: 4.9,
@@ -77,7 +77,7 @@ export default function Products() {
             badge: 'Premium'
         },
         {
-            img: '/images/orange.jpg',
+            img: '/menu/orange.jpg',
             title: 'Sweet Orange Essential Oil',
             description: 'Sweet orange oil is known for its cheerful, sweet scent and mood-boosting properties.',
             rating: 4.2,
@@ -85,7 +85,7 @@ export default function Products() {
             badge: ''
         },
         {
-            img: '/images/frankincense.jpg',
+            img: '/menu/frankincense.jpg',
             title: 'Frankincense Essential Oil',
             description: 'Frankincense oil is valued for its grounding aroma and skin rejuvenating effects.',
             rating: 4.6,
