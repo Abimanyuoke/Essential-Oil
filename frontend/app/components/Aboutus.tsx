@@ -15,7 +15,7 @@ export default function AboutUs() {
                 />
                 <div className="absolute left-2 top-2 md:top-24 bg-white/90 border border-gray-200 rounded-xl flex items-center gap-2 px-2 py-1 md:px-4 md:py-2 shadow-md text-xs md:text-sm w-36 md:w-60 transition-all animate-pulse" style={{ minWidth: '220px' }}>
                     <span className="inline-flex items-center justify-center w-6 h-6 bg-green-100 rounded-full mr-2">
-                        <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#22c55e"></circle><path d="M7 13l3 3 7-7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#22c55e"></circle><path d="M7 13l3 3 7-7" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path></svg>
                     </span>
                     <span>We so opinion friends me message as delight.</span>
                 </div>
