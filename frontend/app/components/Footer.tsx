@@ -1,17 +1,14 @@
 import React from "react";
+import logo from "@/public/logo.webp";
 
 export default function Footer() {
     return (
-        <footer className="bg-gray-800 text-white py-8">
-            <div className="container mx-auto px-4">
-                <div className="flex flex-col md:flex-row justify-between items-center">
-                    <div className="text-center md:text-left mb-4 md:mb-0">
-                        <p>&copy; {new Date().getFullYear()} Essential Oil. All rights reserved.</p>
-                    </div>
-                    <div className="flex space-x-4">
-                        <a href="#" className="hover:text-gray-400">Privacy Policy</a>
-                        <a href="#" className="hover:text-gray-400">Terms of Service</a>
-                        <a href="#" className="hover:text-gray-400">Contact Us</a>
+        <footer className="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
+            <div className="container mx-auto px-6 py-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                    <div className="lg:col-span-1">
+                        <a href="#" className="sr-only">Cinnamon Essential Oil Project</a>
+                        <img src={logo.src} alt="essential oil logo" width={100} height={60} className="brightness-0 mb-6"   />
                     </div>
                 </div>
             </div>
