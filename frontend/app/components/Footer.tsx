@@ -25,13 +25,21 @@ export default function Footer() {
                             </span>
                         </div>
                         <div className="flex items-center gap-4">
-                            <div>
-                                <FaGithub className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-all duration-300" />
+                            <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-all duration-300">
+                                <FaGithub className="text-2xl" />
                             </div>
-                            <FaFacebookF className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-all duration-300" />
-                            <FaTwitter className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-all duration-300" />
-                            <FaYoutube className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-all duration-300" />
-                            <FaInstagram className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-all duration-300" />
+                            <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-all duration-300">
+                                <FaFacebookF className="text-xl" />
+                            </div>
+                            <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-all duration-300">
+                                <FaTwitter className="text-xl" />
+                            </div>
+                            <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-all duration-300">
+                                <FaYoutube className="text-xl" />
+                            </div>
+                            <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-all duration-300">
+                                <FaInstagram className="text-xl" />
+                            </div>
                         </div>
                     </div>
                     <div>
