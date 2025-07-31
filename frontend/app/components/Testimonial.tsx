@@ -7,7 +7,6 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import { Star, Quote } from "lucide-react";
-
 const testimonialData = [
     {
         id: 1,
@@ -78,9 +77,11 @@ export default function Testimonial() {
     return (
         <div className='bg-gradient-to-br from-slate-50 to-primary/10 py-20 my-20'>
             <div className="container mx-auto px-4">
-                <h2 className="font-semibold text-4xl md:text-5xl text-black text-center">Client Testimonials</h2>
-                <div className="w-48 h-1 bg-primary mx-auto mt-4"></div>
-                <p className="text-xl text-gray-600 max-w-2xl mx-auto">Discover what our clients say about their experience working with us</p>
+                <div className="text-center mb-16">
+                    <h2 className="font-semibold text-4xl md:text-5xl text-black text-center">Client Testimonials</h2>
+                    <div className="w-48 h-1 bg-primary mx-auto mt-4 mb-6"></div>
+                    <p className="text-xl text-gray-600">Discover what our clients say about their experience working with us</p>
+                </div>
             </div>
 
             <div className="max-w-6xl mx-auto">
@@ -124,8 +125,8 @@ export default function Testimonial() {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <CarouselPrevious className="hidden md:flex -left-12 bg-white hover:bg-primary/10 border-2 border-primary/20 text-primary hover:text-primary/80 shadow-lg"/>
-                    <CarouselNext className="hidden md:flex -right-12 bg-white hover:bg-primary/10 border-2 border-primary/20 text-primary hover:text-primary/80 shadow-lg"/>
+                    <CarouselPrevious className="hidden md:flex -left-12 bg-white hover:bg-primary/10 border-2 border-primary/20 text-primary hover:text-primary/80 shadow-lg" />
+                    <CarouselNext className="hidden md:flex -right-12 bg-white hover:bg-primary/10 border-2 border-primary/20 text-primary hover:text-primary/80 shadow-lg" />
                 </Carousel>
             </div>
 
