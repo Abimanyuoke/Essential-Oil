@@ -140,6 +140,18 @@ export default function Footer() {
                         <button className="px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors duration-300 font-medium whitespace-nowrap">Subscribe Now</button>
                     </div>
                 </div>
+                <div className="border-t border-gray-800 pt-8"></div>
+                <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <div className="text-sm text-gray-400">
+                        &copy; {new Date().getFullYear()} Cinnamon Essential Oil Project. All rights reserved.
+                    </div>
+                    <div className="flex flex-wrap gap-6 md:gap-4">
+                        <Link href={'#'}>Terms of Service</Link>
+                        <Link href={'#'}>Privacy Policy</Link>
+                        <Link href={'#'}>Cookie Policy</Link>
+                        <Link href={'#'}>Disclaimer</Link>
+                    </div>
+                </div>
             </div>
         </footer>
     );
