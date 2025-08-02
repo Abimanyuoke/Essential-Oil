@@ -132,12 +132,14 @@ export default function Footer() {
                 </div>
                 <div className="bg-gradient-to-r from-primary/10 to-gray-800/50 rounded-2xl p-8 mb-12">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                        <h3 className="font-bold mb-3 text-2">Stay Connected</h3>
-                        <p className="text-gray-300">Subscribe to our newsletter for wellness tips, exclusive offers, and the latest updates on our premium essential oils.</p>
-                    </div>
-                    <div className="flex flex-col sm:flex-row gap-4">
-                        <input type="email" placeholder="Enter your email address" className="flex-1 px-4 py-3 bg-white/10 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" />
-                        <button className="px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors duration-300 font-medium whitespace-nowrap">Subscribe Now</button>
+                        <div>
+                            <h3 className="font-bold mb-3 text-2">Stay Connected</h3>
+                            <p className="text-gray-300">Subscribe to our newsletter for wellness tips, exclusive offers, and the latest updates on our premium essential oils.</p>
+                        </div>
+                        <div className="flex flex-col sm:flex-row gap-4">
+                            <input type="email" placeholder="Enter your email address" className="flex-1 px-4 py-3 bg-white/10 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" />
+                            <button className="px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors duration-300 font-medium whitespace-nowrap">Subscribe Now</button>
+                        </div>
                     </div>
                 </div>
                 <div className="border-t border-gray-800 pt-8"></div>
